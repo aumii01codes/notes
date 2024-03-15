@@ -1,95 +1,71 @@
-An **Application Programming Interface (API)** is a contract that allows code to talk to other code. APIs are the building blocks of modern software because they allow for sharing of resources and services across applications, organizations, and devices.<br>
-APIs are not just for developers. API use is not limited to the tech and IT industries. Everyone benefits from APIs either directly or indirectly because APIs make processes more efficient and connect the services we love and rely on.<br>
+An **Application Programming Interface (API)** is a contract that allows code to talk to other code. APIs are the building blocks of modern software because they allow for sharing of resources and services across applications, organizations, and devices. APIs are not just for developers. API use is not limited to the tech and IT industries. Everyone benefits from APIs either directly or indirectly because APIs make processes more efficient and connect the services we love and rely on.<br><br>
 
-Imagine, API to be the waiter in a restaurant who serves as the connection between the customers (clients) and cook in the kitchen (server).
+Imagine, API to be the waiter in a restaurant who serves as the connection between the customers *(clients)* and cook in the kitchen *(server)*.
 - Client is the requester. Ex: browser, web app, mobile app
 - API is the implified interface for interacting with the backend
-- Server is the backend where the processing happens
+- Server is the backend where the processing happens<br><br>
 
 Architecture types to build Api:
-REST (Representational State Transfer)
-GraphQL
-WebSockets
-webhooks
-SOAP (Simple Object Access Protocol)
-gRPC (Google Remote Procedure Call)
-MQTT (MQ Telemetry Transport)
+- REST (Representational State Transfer)
+- GraphQL
+- WebSockets
+- Webhooks
+- SOAP (Simple Object Access Protocol)
+- gRPC (Google Remote Procedure Call)
+- MQTT (MQ Telemetry Transport)<br><br>
 
 Various types of API based on medium:
-Hardware APIs
-Interface for software to talk to hardware.
-Example: How your phone's camera talks to the operating system. 
-Software Library APIs
-Interface for directly consuming code from another code base.
-Example: Using methods from a library you import into your application.
-Web APIs
-Interface for communicating across code bases over a network.
-Example: Fetching current stock prices from a finance API over the internet.
+- Hardware APIs<br>
+  Interface for software to talk to hardware.
+  Example: How your phone's camera talks to the operating system. 
+- Software Library APIs<br>
+  Interface for directly consuming code from another code base.
+  Example: Using methods from a library you import into your application.
+- Web APIs<br>
+  Interface for communicating across code bases over a network.
+  Example: Fetching current stock prices from a finance API over the internet.<br><br>
 
 Various types of API based on scope:
-Public APIs (aka Open APIs)
-Consumed by anyone who discovers the API
-Private APIs
-Consumed only within an organization and not made public
-Partner APIs
-Consumed between one or more organizations that have an established relationship
+- Public APIs (aka Open APIs)<br>
+  Consumed by anyone who discovers the API
+- Private APIs<br>
+  Consumed only within an organization and not made public
+- Partner APIs<br>
+  Consumed between one or more organizations that have an established relationship<br><br>
 
-Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs faster and consume them with ease. That's why Postman is trusted by over 25 million users worldwide!
+**Postman** is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs faster and consume them with ease. That's why Postman is trusted by over 25 million users worldwide!
 
-cURL : client uniform resource locator
+**cURL** stands for client uniform resource locator<br><br>
 
 In the API-first world:
 - APIs are considered a #1 priority
 - APIs are easily consumable
-- APIs are easily discoverable
+- APIs are easily discoverable<br><br>
 
-API USED IN THIS COURSE WILL BE Public, Rest, web API
+***API USED IN THIS COURSE WILL BE Public, Rest, web API***<br><br>
 
-REST APIs
+**REST APIs**<br>
 Some traits of REST APIs include not storing session state between requests, the ability to cache, and the ability to send and receive various data types.
-Collections are places to organize your API requests in Postman.
+Collections are places to organize your API requests in Postman.<br><br>
 
 Anatomy of a Request:
-Method
-Endpoint/path
-Parameters
-Headers
-Body
+- Method
+- Endpoint/path
+- Parameters
+- Headers
+- Body<br><br>
 
-
-METHOD
-It mentions the operation that we want to perform
-When we make an HTTP call to a server, we specify a request method that indicates the type of operation we are about to perform. These are also called HTTP verbs.
+**METHOD**<br>
+It mentions the operation that we want to perform when we make an HTTP call to a server, we specify a request method that indicates the type of operation we are about to perform. These are also called *HTTP verbs*.
 REST API allows you to CRUD (Create, Read, Update, Delete)
 Method to perform these operations:
 - GET = Retrieve data (Read)
 - POST = Send data (Create)
 - PUT/PATCH* = Update data (Update)
-- DELETE = Delete data (Delete)
+- DELETE = Delete data (Delete)<br><br>
 
-
-GET
-
-
-
-POST
-
-
-
-PUT
-
-
-PATCH
-
-
-DELETE
-
-
-
-
-ENDPOINT
-the url on which the method is performed
-In addition to a request method, a request must include a request URL that indicates where to make the API call. A request URL has three parts: a protocol, host (location of the server), and path (route on the server). In REST APIs, the path often points to a reference entity, like "books".
+**ENDPOINT**<br>
+The url on which the method is performed. In addition to a request method, a request must include a request URL that indicates where to make the API call. A request URL has three parts: *protocol*, *host* (location of the server), and *path* (route on the server).
 Protocol 
 Host
 Path
