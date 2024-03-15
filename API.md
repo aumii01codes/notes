@@ -132,12 +132,15 @@ From broadest to narrowest, the scopes of variables are *global*, *collection*, 
 ![](images/variables.png) <br><br>
 
 **AUTHORIZATION [auth]** <br>
-There are multiple methods for authorizing a request. Some examples are Basic Auth (username and password), OAuth (delegated authorization), and API Keys (secret strings registered to a developer from an API portal). 
+There are multiple methods for authorizing a request. Some examples are:
+- Basic Auth (username and password)
+- OAuth (delegated authorization)
+- API Keys (secret strings registered to a developer from an API portal). <br>
 
 APIs that use API Key auth usually allow developers to sign up in a developer portal, where they will receive a random API Key that can be used to authorize their requests to the API. The API Key allows the API to track who is making calls and how often.  
 
-The Postman Library API v2 uses very light protection and does not require you to register for an API Key.
-Header name[key]: api-key
-Header value: postmanrulz
+The Postman Library API v2 uses very light protection and does not require you to register for an API Key.<br>
+Header name[key]: api-key<br>
+Header value: postmanrulz<br>
 
-
+** ** <br>
