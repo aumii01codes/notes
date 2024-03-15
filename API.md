@@ -79,15 +79,6 @@ Some APIs allow you to refine your request further with key-value pairs called q
 Query parameters are added to the end of the path. They start with a question mark (?) followed by the key-value pairs in the format: <key>=<value>. If there are multiple query parameters, each is separated by an ampersand (&). This can alos be done under the Params tab with setting the key & value and Postman syncs the changes made to the request URL
 
 - Path Variable<br>
-Another way of passing request data to an API is via path variables (path parameters). A path variable is a dynamic section of a path and is often used for IDs and entity names such as usernames. The path variable comes immediately after a slash in the path.<br>
-For example, the GitHub API allows you to search for GitHub users by providing a username in the path in place of {username} below:<br>
-```
-GET https://api.github.com/users/{username}
-```
-<br>
-There can be multiple path variables in a single request, such as this endpoint for getting a user's GitHub code repository:<br><br>
-```
-GET https://api.github.com/repos/{owner}/{repoName}
-```
-<br>
+Another way of passing request data to an API is via path variables (path parameters). A path variable is a dynamic section of a path and is often used for IDs and entity names such as usernames. The path variable comes immediately after a slash in the path. There can be multiple path variables in a single request.<br>
+
 Note: Some API documentation uses colon syntax to represent a wildcard in the path like /users/:username, while some use curly braces like /users/{username}. They both mean the same thing: that part of the path is dynamic!
