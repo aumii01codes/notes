@@ -61,7 +61,8 @@ REST API allows you to CRUD (Create, Read, Update, Delete)
 Method to perform these operations:
 - GET = Retrieve data (Read)
 - POST = Send data (Create)
-- PUT/PATCH* = Update data (Update)
+- PUT/PATCH* = Update data (Update)<br>
+  PUT usually replaces an entire resource whereas PATCH usually is for partial updates<br>
 - DELETE = Delete data (Delete)<br><br>
 
 **ENDPOINT**<br>
@@ -173,4 +174,13 @@ pm.collectionVariables.set(“myVar”, “foo”)
 ```
 <br><br>
 
-Shortcut 
+Shortcut to create a fork:
+` Ctrl + Alt + F `
+
+**EXTERNAL LINKS**
+- [Installation](https://learning.postman.com/docs/getting-started/installation/installation-and-updates/)
+- [Desktop app](https://www.postman.com/downloads/)
+- [Desktop Agent](https://www.postman.com/downloads/postman-agent/)
+- [Blog](https://blog.postman.com/introducing-the-postman-agent-send-api-requests-from-your-browser-without-limits/)
+- [Postman Documentation](https://learning.postman.com/docs/introduction/overview/)
+- [Postman Library API v2 docs](https://documenter.getpostman.com/view/15567703/UVyxRtng)
