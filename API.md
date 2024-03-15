@@ -82,3 +82,62 @@ Query parameters are added to the end of the path. They start with a question ma
 Another way of passing request data to an API is via path variables (path parameters). A path variable is a dynamic section of a path and is often used for IDs and entity names such as usernames. The path variable comes immediately after a slash in the path. There can be multiple path variables in a single request.<br>
 
 Note: Some API documentation uses colon syntax to represent a wildcard in the path like /users/:username, while some use curly braces like /users/{username}. They both mean the same thing: that part of the path is dynamic!
+
+![](/images/diff.png) <br><br>
+
+**BODY** <br>
+You will need to send body data with requests whenever you need to add or update structured data. Typically, you will use body data with PUT, POST, and PATCH requests.
+The Body tab in Postman enables you to specify the data you need to send with a request. You can send different types of body data to suit your API.
+You can use raw body data to send anything you can enter as text. Use the raw tab, and the type dropdown list to indicate the format of your data (Text, JavaScript, JSON, HTML, or XML), and Postman will enable syntax-highlighting and appending the relevant headers to your request.<br><br>
+
+**STATUS CODES** <br>
+Status codes are indicators of whether a request failed or succeeded.<br>
+2xx = Successful<br>
+200 - OK<br>
+201 - Created<br>
+204 - No Content<br>
+
+3xx = Redirection<br>
+301 - Moved<br>
+304 - Not modified<br>
+
+4xx = Client error<br>
+400 - Bad Request<br>
+401 - Unauthorized<br>
+403 - Forbidden<br>
+404 - Not Found<br>
+
+5xx = Server error<br>
+500 - Internal Error<br>
+501 - Not Implemented<br>
+502 - Bad Gateway<br>
+503 - Service Unavailable<br>
+504 - Gateway Timeout<br><br>
+
+**REQUEST - RESPONSE PATTERN** <br>
+The client is the agent making a request [browser or an application]. The request is sent over a network to some server. The server will interpret the request and sent the appropriate response over the network back to the Postman client.<br>
+![](/images/requestresponse.png) <br><br>
+
+**VARIABLES** <br>
+Postman allows to save values as variables, so that you can:  
+- Reuse values to keep your work DRY (Don’t Repeat Yourself)
+- Hide sensitive values like API keys from being shared publicly<br>
+
+You can access it using double curly brace syntax like this: {{variableName}}<br>
+Initial Value - the value initially set when someone forks or imports your collection. Note that if you share your collection with others, they will see this value, so don't put any secrets here!<br>
+Current Value - Postman always resolves the variable to this value. This is local to your Postman account, and not public. It is good to keep secrets like API Keys ONLY in this column and not include them in the Initial Value column.<br>
+
+From broadest to narrowest, the scopes of variables are *global*, *collection*, *environment*, *data*, and *local*.
+
+![](images/variables.png) <br><br>
+
+**AUTHORIZATION [auth]** <br>
+There are multiple methods for authorizing a request. Some examples are Basic Auth (username and password), OAuth (delegated authorization), and API Keys (secret strings registered to a developer from an API portal). 
+
+APIs that use API Key auth usually allow developers to sign up in a developer portal, where they will receive a random API Key that can be used to authorize their requests to the API. The API Key allows the API to track who is making calls and how often.  
+
+The Postman Library API v2 uses very light protection and does not require you to register for an API Key.
+Header name[key]: api-key
+Header value: postmanrulz
+
+
