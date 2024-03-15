@@ -172,10 +172,11 @@ In addition to getting variables, you can also set them with:
 pm.collectionVariables.set("variableName", "variableValue")
 pm.collectionVariables.set(“myVar”, “foo”)
 ```
-<br><br>
+<br>
 
 Shortcut to create a fork:
 ` Ctrl + Alt + F `
+<br><br>
 
 **EXTERNAL LINKS**
 - [Installation](https://learning.postman.com/docs/getting-started/installation/installation-and-updates/)
