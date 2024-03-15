@@ -141,6 +141,36 @@ APIs that use API Key auth usually allow developers to sign up in a developer po
 
 The Postman Library API v2 uses very light protection and does not require you to register for an API Key.<br>
 Header name[key]: api-key<br>
-Header value: postmanrulz<br>
+Header value: postmanrulz<br><br>
 
-** ** <br>
+**SCRIPTING** <br>
+Postman allows you to add automation and dynamic behaviors to your collections with scripting. 
+Postman will automatically execute any provided scripts during two events in the request flow:
+- Immediately before a request is sent: pre-request script (Pre-request Script tab of request).
+```
+console.log(pm.request)
+```
+- Immediately after a response comes back: test script (Tests tab of request).
+```
+console.log(pm.response.json())
+```
+<br><br>
+
+**'pm' OBJECT** <br>
+Postman has a helper object named pm that gives you access to data about your Postman environment, requests, responses, variables and testing utilities.
+For example, you can access the JSON response body from an API with:
+```
+pm.response.json()
+```
+You can also programmatically get collection variables like the value of baseUrl with:
+```
+pm.collectionVariables.get(“baseUrl”)
+```
+In addition to getting variables, you can also set them with:
+```
+pm.collectionVariables.set("variableName", "variableValue")
+pm.collectionVariables.set(“myVar”, “foo”)
+```
+<br><br>
+
+Shortcut 
