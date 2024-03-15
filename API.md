@@ -1,8 +1,7 @@
-An Application Programming Interface (API) is a contract that allows code to talk to other code. APIs are the building blocks of modern software because they allow for sharing of resources and services across applications, organizations, and devices.
+An **Application Programming Interface (API)** is a contract that allows code to talk to other code. APIs are the building blocks of modern software because they allow for sharing of resources and services across applications, organizations, and devices.<br>
+APIs are not just for developers. API use is not limited to the tech and IT industries. Everyone benefits from APIs either directly or indirectly because APIs make processes more efficient and connect the services we love and rely on.<br>
 
-APIs are not just for developers. API use is not limited to the tech and IT industries. Ultimately, everyone benefits from APIs either directly or indirectly because APIs make processes more efficient and connect the services we love and rely on.
-
-Imagine, API to be the waiter in a restaurant who serves as the connection between the customers[clients] and cook in the kitchen[server].
+Imagine, API to be the waiter in a restaurant who serves as the connection between the customers (clients) and cook in the kitchen (server).
 - Client is the requester. Ex: browser, web app, mobile app
 - API is the implified interface for interacting with the backend
 - Server is the backend where the processing happens
